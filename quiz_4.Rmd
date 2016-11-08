@@ -1,0 +1,49 @@
+---
+title: "quiz_4"
+author: "Jordan Ho"
+date: '2016-11-08'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r,echo=FALSE,message=FALSE, warning=FALSE}
+# Code goes in blocks like this
+
+# load libraries
+library(tidyverse)
+library(apaTables)
+library(haven)
+library(cocor)
+
+```
+
+# Hypotheses
+
+H1: There will be a positive relation between self-esteem and academic performance, such that as self-esteem increases, academic performance increases.
+
+H2: There will be a negative relation between self-esteem and quality of dating relationships, such that as self-esteem increases, quality of dating relationships decreases.
+
+H3: There will be a positive relation between self-esteem and quality of friendships, such that as self-esteem increases, quality of friendships increases.
+
+# Analysis Plan A
+
+H1: I will analyse my hypothesis using a bivariate correlation between self-esteem and academic performance. I will use a traditional power analyis since the population correlation is known (.50). I will require n = 28 in order to obtain power = .8
+
+H2: I will analyse my hypothesis using a bivariate correlation between self-esteem and quality of dating relationships. I will use a safeguard power analysis because an estimate of the correlation exists (r=-.30). After using a lower-bound estimate for the population correlation, I will require n = 32
+
+H3: I will analyse my hypothesis using a bivariate correlation between self-esteem and quality of friendships. Since no estimate of the correlation exists, I assume a small effect size (.07), which I will use in a power analysis. I will require n = 1598
+
+The overall N I will use when conducting the study is N = 1658
+
+# Analysis Plan B
+
+H1: I will analyse my hypothesis using a bivariate correlation between self-esteem and academic performance. I will calculate sample size estimation. I will require an n = 38
+
+H2: I will analyse my hypothesis using a bivariate correlation between self-esteem and quality of dating relationships. I will use a safeguard power analysis because the population correlation is not known, but an estimate of the correlation exists. I found that after a sample size analysis, n = 1235 produces a CI width (0.110216) that does not exceed the lower bound of the effect size estimate (r=-.1100677).
+
+H3: I will analyse my hypothesis using a bivariate correlation between self-esteem and quality of friendships. Since no estimate of the correlation exists, I assume a small effect size (.07), which I will use in a power analysis and use the lower bound estimate in a sample size analysis. I will require n = 3100
+
+The overall N I will use when conducting the study is N = 4373
